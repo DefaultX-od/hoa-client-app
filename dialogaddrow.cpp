@@ -197,15 +197,5 @@ void DialogAddRow::on_comboBoxApartmentNumber_OF_currentIndexChanged(int index)
     query.next();
     ui->doubleSpinBoxOwnershipInterest_OF->setMaximum(ui->doubleSpinBoxOwnershipInterest_OF->text().toDouble()+(100-query.value(0).toDouble()));
     ui->doubleSpinBoxOwnershipInterest_OF->setValue(ui->doubleSpinBoxOwnershipInterest_OF->text().toDouble());
-//    if(action=="new"){
-
-//    ui->doubleSpinBoxOwnershipInterest_OF->setMaximum(100-query.value(0).toDouble());
-//    }
-//    else if (action=="edit" && 100-query.value(0).toDouble()>0){
-//    ui->doubleSpinBoxOwnershipInterest_OF->setMaximum(100-ui->doubleSpinBoxOwnershipInterest_OF->text().toDouble());
-//    }
-//    else if (action=="edit"&& 100-query.value(0).toDouble()==0){
-//    ui->doubleSpinBoxOwnershipInterest_OF->setMaximum(100-ui->doubleSpinBoxOwnershipInterest_OF->text().toDouble());
-//    }
 }
 
